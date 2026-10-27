@@ -17,5 +17,11 @@ public class FirstAndLast {
             list.add(input);
         }
 
+        int first = 0;
+        int last = (list.size() - 1);
+
+        System.out.println(list.get(first));
+        System.out.println(list.get(last));
+
     }
 }
