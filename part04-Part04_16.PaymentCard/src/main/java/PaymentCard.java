@@ -15,6 +15,6 @@ public class PaymentCard {
     }
 
     public String toString() {
-        return "hhhh";
+        return "The card has a balance of " + this.balance + " euros";
     }
 }
