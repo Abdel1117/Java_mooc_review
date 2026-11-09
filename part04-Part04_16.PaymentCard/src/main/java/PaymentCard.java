@@ -6,12 +6,28 @@ public class PaymentCard {
     }
 
     public void eatAffordably() {
+        if (this.balance - 2.60 >= 0) {
+            this.balance = this.balance - 2.60;
+        }
     }
 
     public void eatHeartily() {
+        if (this.balance - 4.60 >= 0) {
+            this.balance = this.balance - 4.60;
+        }
+
     }
 
-    public void addMoney() {
+    public void addMoney(double amount) {
+
+        if (amount > 0) {
+
+            if (this.balance + amount < 150) {
+                this.balance = this.balance + amount;
+            } else {
+                this.balance = 150;
+            }
+        }
     }
 
     public String toString() {
