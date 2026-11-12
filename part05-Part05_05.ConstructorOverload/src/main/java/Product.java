@@ -11,7 +11,36 @@ public class Product {
         this.weight = weight;
     }
 
-    
+    public Product(String name) {
+        /*
+         * creates a product with the given name. Its location is set to "shelf" and its
+         * weight is set to 1.
+         */
+        this.name = name;
+        this.location = "shelf";
+        this.weight = 1;
+    }
+
+    public Product(String name, String location) {
+        /*
+         * creates a product with the given name and the given location. Its weight is
+         * set to 1.
+         */
+        this.name = name;
+        this.location = location;
+        this.weight = 1;
+    }
+
+    public Product(String name, int weight) {
+        /*
+         * creates a product with the given name and the given weight. Its location is
+         * set to "shelf".
+         */
+        this.name = name;
+        this.weight = weight;
+        this.location = "shelf";
+    }
+
     public String getName() {
         return name;
     }
